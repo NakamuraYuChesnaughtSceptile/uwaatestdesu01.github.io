@@ -77,10 +77,11 @@ main {
     border: none;
   }
   header .header-menu div img {
+    position: relative;
+    top: 5px;
     width: 50px;
     min-width: 50px;
     max-width: 100px;
-    line-height: 60px;
   }
   /* hambergur------------------------------------------ */
   header .hambergur-menu {

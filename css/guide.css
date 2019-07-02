@@ -57,9 +57,9 @@ main h3:after {
 }
 .image img{
   width: 40%;
+  height: auto;
   margin: 10px 0;
-  max-width: 500px;
-  object-fit: contain;
+  max-width: 40%;
 }
 /* --------------------------------------------ここまで画像置いてるとこ */
 

@@ -56,8 +56,8 @@ main h3:after {
   flex-wrap: wrap;
 }
 .image img{
-  width: 40vw;
-  margin: 5vh 0;
+  width: 40%;
+  margin: 10px 0;
   max-width: 400px;
 }
 /* --------------------------------------------ここまで画像置いてるとこ */
@@ -132,10 +132,14 @@ main h3:after {
   }
   .summary{
     display: flex;
-    width: 90%;
+    justify-content: space-around;
+  }
+  .summary table{
+    margin: 0;
   }
   .summary img{
     width: 40%;
+    object-fit: contain;
   }
   .description .link_button{
     left: 40%;

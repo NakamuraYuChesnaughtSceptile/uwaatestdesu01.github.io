@@ -1,17 +1,16 @@
 @charset "utf-8";
-
-body{
+body {
   margin: 0;
   padding: 0;
 }
 
-h2:first-child{
+h2:first-child {
   margin: auto;
   padding: auto;
 }
 
-main{
- padding-top: 90px;
+main {
+  padding-top: 90px;
 }
 
 /* 320px以下は固定 */
@@ -65,11 +64,11 @@ main{
     text-align: center
   }
   header .header-menu div {
-    padding: 3px 0 0 0;
     border-right: 1px #fff dashed;
     border-left: 1px #fff dashed;
     text-align: center;
     background: #4d3a98;
+    height: 60px;
   }
   header .header-menu div:hover {
     cursor: pointer;
@@ -200,7 +199,7 @@ main{
     border-width: 10px 0 10px 17.3px;
     border-color: transparent transparent transparent #ffffff;
   }
-  footer{
+  footer {
     text-align: center;
     background: #6B6B6B;
     width: 100%;
@@ -208,7 +207,7 @@ main{
     color: #fff;
     padding: 20px 0 20px 0;
   }
-  small{
+  small {
     margin: 0;
     text-align: center;
   }
@@ -217,10 +216,9 @@ main{
 /* ---------------------------------------------ここからPCver */
 
 @media screen and (min-width:769px) {
-  main{
+  main {
     padding-top: 40px;
-   }
-
+  }
   .sp {
     display: none;
   }
@@ -257,7 +255,7 @@ main{
     text-align: center;
     border-right: 1px dashed #fff;
   }
-  header .pcmenu ul li:last-child{
+  header .pcmenu ul li:last-child {
     border-right: 0;
   }
   header .pcmenu ul li a {
@@ -266,13 +264,13 @@ main{
     text-decoration: none;
     font-family: "M PLUS Rounded 1c";
   }
-  header .pcmenu ul li a:hover{
+  header .pcmenu ul li a:hover {
     padding-bottom: 5px;
-    border-bottom:1px solid #fff;
+    border-bottom: 1px solid #fff;
   }
-  header .pcmenu ul li.active{
+  header .pcmenu ul li.active {
     padding-bottom: 10px;
-    border-bottom:2px solid #fff;
+    border-bottom: 2px solid #fff;
   }
   /* ----------------------------ここまでPC用メニュー */
   main {
@@ -331,7 +329,7 @@ main{
     border-color: transparent transparent transparent #ffffff;
   }
   /* フッター */
-  footer{
+  footer {
     text-align: center;
     background: #6B6B6B;
     width: 100%;
@@ -340,7 +338,7 @@ main{
     padding: 20px 0 20px 0;
     margin-top: 100px;
   }
-  .footer-menu{
+  .footer-menu {
     position: relative;
     max-width: 1080px;
     margin: auto;
@@ -349,31 +347,30 @@ main{
     font-size: 16px;
     word-break: keep-all;
   }
-  .footer-menu ul{
+  .footer-menu ul {
     display: flex;
     padding: 5px 0 20px 25px;
     border-bottom: 1px #fff solid;
   }
-  .footer-menu ul li{
+  .footer-menu ul li {
     width: 140px;
   }
-  .footer-menu ul li a{
+  .footer-menu ul li a {
     color: #fff;
     text-decoration: none;
   }
-  .footer-menu ul li a:hover{
+  .footer-menu ul li a:hover {
     text-decoration: underline;
   }
-  small{
+  small {
     display: block;
     max-width: 1080px;
     margin: auto;
     text-align: left;
     padding-left: 50px;
   }
-  
-   /* 上に戻るボタン  */
-  div.wrapper{
+  /* 上に戻るボタン  */
+  div.wrapper {
     width: 80px;
     height: 80px;
     border: 3px #000 solid;
@@ -384,16 +381,16 @@ main{
     right: 60px;
     margin: -60px 0 0 0;
   }
-  div.wrapper a{
+  div.wrapper a {
     text-decoration: none;
     color: #000;
     transition: all .3s;
   }
-  div.wrapper a:hover{
+  div.wrapper a:hover {
     transition: all .3s;
     color: #999;
   }
-  .toTop{
+  .toTop {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -402,24 +399,23 @@ main{
     font-family: 'Prata', serif;
     margin: 0 10px 10px 0;
   }
-  .toTop p{
+  .toTop p {
     margin: 0;
     font-size: 25px;
   }
-  div.toTop{
+  div.toTop {
     transform: rotate(-45deg);
     position: relative;
   }
-  
-   /* 上に戻るボタン  */
+  /* 上に戻るボタン  */
 }
 
+/* 下のトップボタンの位置変更 */
 
- /* 下のトップボタンの位置変更 */
-@media screen and (max-width:1000px){
-  div.wrapper{
+@media screen and (max-width:1000px) {
+  div.wrapper {
     position: absolute;
-    bottom:90px;
+    bottom: 90px;
     right: 40px;
   }
 }

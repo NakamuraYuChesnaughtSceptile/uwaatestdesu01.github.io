@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+/* ブラウザEgde用 */
+@supports (-ms-ime-align:auto){
+  .slider .slider-gradient:after{
+    background: linear-gradient(rgba(0,0,0,.0), rgba(0,0,0,.4), rgba(0,0,0,.7));
+  }
+}
+
+/* ブラウザIE用 */
+@media all and (-ms-high-contrast: none) {
+  .slider .slider-gradient:after{
+    background: linear-gradient(rgba(0,0,0,.0), rgba(0,0,0,.4), rgba(0,0,0,.7));
+  }
+}
+
+.headerimg {
+  width: 100%;
+  min-height: 300px;
+  object-fit: cover;
+}
+
+.slider .slider-gradient {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider .slider-gradient:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(#00000000, #00000077, #000000AA);
+}
+
+.slider .slider-gradient .slidertext {
+  position: absolute;
+  z-index: 40;
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  color: #fff;
+}
+
+.slider .slider-gradient .slidertext h3 {
+  font-weight: normal;
+  font-size: 40px;
+  margin: 0;
+}
+
+.slider .slider-gradient .slidertext p {
+  margin: 0;
+  font-size: 32px;
+}
+
+.recruitment a{
+  text-decoration: none;
+  color: #000;
+}
+
+/* --------------------------------------ここからモバイル */
+
+@media screen and (max-width:768px) {
+  .headerimg.pc {
+    display: none!important;
+  }
+  .headerimg.sp {
+    display: block!important;
+  }
+  .hambergur-menu ul li a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .hambergur-menu ul li a:hover{
+    text-decoration: underline;
+  }
+  .headerimg{
+    padding-top: 60px;
+  }
+  main{
+    padding-top: 30px;
+  }
+  .slider .slider-gradient .slidertext {
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+  }
+  .slider .slider-gradient .slidertext h3 {
+    font-weight: normal;
+    font-size: 19px;
+    margin: 0;
+  }
+  .slider .slider-gradient .slidertext p {
+    margin: 0;
+    font-size: 15px;
+  }
+  .slick-dots {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    background: #ccc;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+  .slick-dots li {
+    position: relative;
+    width: 10%;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  ul.info {
+    list-style: none;
+    padding-left: 0;
+    width: 95%;
+    margin: 30px auto 30px auto;
+  }
+  ul.info li {
+    font-size: 16px;
+    border-bottom: 0.5px dashed #000;
+    margin:auto auto 20px auto;
+    width: 95%;
+  }
+  ul.info li:hover {
+    background: rgba(173, 220, 240, 0.5);
+  }
+  ul.info li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+  ul.info li a:hover {
+    cursor: pointer;
+  }
+  ul.info li date {
+    position: relative;
+    display: block;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+  ul.info li date:after{
+    position: absolute;
+    left: 0;
+    top: 6px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #000;
+    transform: rotate(45deg);
+  }
+  .recruitment{
+    display: block;
+  }
+  .recruitment hr{
+    width: 90%;
+  }
+  .recruitment .recruitment-content{
+    width: 80%;
+    margin: 40px auto;
+  }
+
+  .recruitment .recruitment-content img{
+    width: 100%;
+  }
+  
+  .recruitment .recruitment-content h4{
+    margin: 5px 0px 0px 0px;
+    font-size: 16px;
+    font-family: "M PLUS Rounded 1c";
+  }
+  .recruitment .recruitment-content p{
+    margin-top: 5px;
+    font-size: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 1.7em;
+  }
+  .map {
+    text-align: center;
+    margin: auto auto 60px auto;
+  }
+  .map iframe {
+    width: 90%;
+    height: 300px;
+  }
+  .map ul {
+    margin-bottom: 40px;
+  }
+  .map ul li {
+    text-align: left;
+    list-style: square;
+  }
+  .map .link_button {
+    margin-bottom: 40px;
+  }
+}
+
+/* -------------------------------------ここからPCver */
+
+@media screen and (min-width:769px) {
+  .headerimg.pc {
+    display: block!important;
+  }
+  .headerimg.sp {
+    display: none!important;
+  }
+  .slick-dots li {
+    position: relative;
+    width: 60px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  ul.info {
+    list-style: none outside;
+    margin: 40px auto 60px auto;
+    padding-left: 0;
+    width: 95%;
+  }
+  ul.info li {
+    padding-left: 20px;
+    border-bottom: 0.5px dashed #000;
+    margin-bottom: 20px;
+    width: 95%;
+  }
+  ul.info li:hover {
+    background: rgba(173, 220, 240, 0.5);
+  }
+  ul.info li a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: 20px;
+  }
+  ul.info li a:hover {
+    cursor: pointer;
+  }
+  ul.info li date {
+    position: relative;
+    display: block;
+    font-weight: bold;
+    padding-left: 25px;
+  }
+  ul.info li date:after{
+    position: absolute;
+    left: 0;
+    top: 6px;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: #000;
+    transform: rotate(45deg);
+  }
+  .recruitment{
+    display: flex;
+    justify-content: space-around;
+  }
+  .recruitment .recruitment-content{
+    width: 378px;
+  }
+  .recruitment .recruitment-content h4{
+    margin: 5px 0px 0px 0px;
+    font-size: 20px;
+    font-family: "M PLUS Rounded 1c";
+  }
+  .recruitment .recruitment-content p{
+    margin-top: 5px;
+  }
+  .map {
+    text-align: center;
+    margin: auto;
+  }
+  .map iframe {
+    width: 85%;
+    height: 400px;
+  }
+  .map ul {
+    margin-bottom: 50px;
+  }
+  .map ul li {
+    list-style: square;
+    text-align: left;
+    font-size: 20px;
+  }
+}

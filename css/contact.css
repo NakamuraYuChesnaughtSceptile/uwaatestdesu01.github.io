@@ -1,0 +1,97 @@
+h2:first-child{
+  margin-bottom: 20px;
+}
+
+.contact_sentence{
+  margin: 10% auto;
+}
+
+p.contact_red{
+  font-weight: bold;
+  color: red;
+  text-decoration: underline;
+}
+.content_img{
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.contact_center{
+  text-align: center;
+
+}
+
+.contact_center p{
+  padding: 5% auto;
+}
+
+
+.contact_numbers{
+  margin-top: 5%;
+}
+
+.contact_numbers ul{
+padding:20px;
+}
+
+.contact_numbers ul li{
+  list-style-type:none ;
+  border-bottom: solid 2px #2e2e2e;
+  padding-top: 20px;
+}
+
+.contact_numbers ul li .contact_number{
+  width: 130px;
+  padding-left: 15%;
+}
+
+.contact_numbers ul li .contact_number_img{
+  width: 40px;
+  padding-left: 1em
+}
+
+@media screen and (min-width:768px) {
+  .content_flex{
+    display: flex;
+    flex: 50%;
+  }
+  .content_img{
+    width:100%;
+  }
+  .content_mb{
+    margin: auto;
+  }
+  .content_pc{
+  margin: auto;
+  }
+
+  .contact_sentence{
+    margin: 50px auto;
+  }
+
+  .contact_center p{
+    padding: 10px;
+  }
+
+  .contact_numbers{
+    margin-top: 60px;
+  }
+
+  .contact_numbers p{
+    width: 80%;
+    padding-top: 10px;
+    border-bottom: solid 2px #2e2e2e;
+  }
+
+  .contact_numbers p .contact_number{
+    width: 150px;
+    padding-left: 15%;
+  }
+
+  .contact_numbers p .contact_number_img{
+    width: 40px;
+    padding-left: 1em
+  }
+
+
+}

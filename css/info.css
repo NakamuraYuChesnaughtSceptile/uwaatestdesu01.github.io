@@ -1,0 +1,38 @@
+/*ここからモバイル*/
+
+.info_img{
+  text-align: center;
+  width: 100%;
+}
+
+.info_summary{
+  padding-left:10 ;
+}
+
+.info_summary ul{
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+}
+
+.info_summary ul li{
+  padding-top:20px;
+  list-style: none;
+  border-bottom: solid 0.5px #2e2e2e;
+}
+/*ここまでモバイル*/
+
+/*ここからPC*/
+@media screen and (min-width:768px) {
+  .info_description p{
+    line-height: 2.2em;
+  }
+  .info_summary ul li{
+    font-size: 20px;
+    padding-top:2em;
+    list-style: none;
+    border-bottom: solid 0.5px #2e2e2e;
+  }
+
+
+}
+/*ここまでPC*/

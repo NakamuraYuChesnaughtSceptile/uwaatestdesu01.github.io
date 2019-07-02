@@ -1,0 +1,424 @@
+@charset "utf-8";
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+h2:first-child{
+  margin: auto;
+  padding: auto;
+}
+
+main{
+ padding-top: 90px;
+}
+
+/* 320px以下は固定 */
+
+@media screen and (max-width:320px) {
+  body {
+    min-width: 320px;
+  }
+  header .header-menu {
+    position: relative;
+    right: unset;
+  }
+}
+
+@media screen and (max-width:768px) {
+  /* -------------------------------ここからモバイルver */
+  .sp {
+    display: block;
+  }
+  .pc {
+    display: none;
+  }
+  /* header---------------------------- */
+  header {
+    position: fixed;
+    border-bottom: 2px #000 solid;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-start;
+    background: #fff;
+    z-index: 100;
+    width: 100%;
+    height: 60px;
+  }
+  header h1 {
+    margin: 0;
+    text-align: center;
+    width: 58%;
+    padding-top: 0%;
+  }
+  header h1 img {
+    width: 140px;
+  }
+  header .header-menu {
+    position: absolute;
+    width: 150px;
+    right: 0;
+    display: flex;
+    background-color: #4d3a98;
+    text-align: center
+  }
+  header .header-menu div {
+    padding-top: 3px;
+    border-right: 1px #fff dashed;
+    border-left: 1px #fff dashed;
+    text-align: center;
+  }
+  header .header-menu div:hover {
+    cursor: pointer;
+  }
+  header .header-menu div:last-child, .header-menu div:first-child {
+    border: none;
+  }
+  header .header-menu div img {
+    width: 50px;
+    min-width: 50px;
+    max-width: 100px;
+  }
+  /* hambergur------------------------------------------ */
+  header .hambergur-menu {
+    position: fixed;
+    z-index: 99;
+    width: 60vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    transition: all .3s;
+    background: rgb(65, 64, 64);
+  }
+  header .close-menu {
+    right: -100%;
+  }
+  header .close-background {
+    right: -100%;
+  }
+  header .hambergur-menu .menu-close {
+    width: 50px;
+    position: absolute;
+    right: 0;
+  }
+  header .hambergur-menu .menu-close:hover {
+    cursor: pointer;
+  }
+  /* hambergurのmenu-------------------------------------- */
+  header .hambergur-menu ul {
+    margin-top: 60px;
+    padding: 0;
+  }
+  header .hambergur-menu ul li {
+    list-style: none;
+    color: #fff;
+    font-size: 18px;
+    border-top: 1px dashed;
+    padding-left: 10%;
+    line-height: 300%;
+  }
+  header .hambergur-menu ul li:last-child {
+    border-bottom: 1px dashed;
+  }
+  header .hambergur-sns {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  header .hambergur-sns a {
+    width: 50%;
+    text-align: center;
+  }
+  header .hambergur-sns a img {
+    width: 50px;
+  }
+  .hambergur-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    transition: all .3s;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  /* ----------------------------ここまでハンバーガメニュー */
+  main {
+    margin-top: 0%;
+  }
+  main h2 {
+    font-family: "M PLUS Rounded 1c";
+    position: relative;
+    font-size: 140%;
+    background: #484848;
+    color: #fff;
+    font-weight: normal;
+    padding-left: 50px;
+    border-radius: 13px;
+    margin: 30px auto 30px auto;
+    width: 85%;
+  }
+  main h2:after {
+    position: absolute;
+    content: "";
+    left: 20px;
+    top: 8px;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    transform: rotate(45deg);
+  }
+  main p {
+    font-size: 16px;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 2em;
+  }
+  .link_button {
+    position: relative;
+    background: #739023;
+    text-align: center;
+    padding: 15px 50px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+  }
+  .link_button:hover {
+    background: #acc076;
+  }
+  .link_button:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 16px;
+    right: 20px;
+    border-style: solid;
+    border-width: 10px 0 10px 17.3px;
+    border-color: transparent transparent transparent #ffffff;
+  }
+  footer{
+    text-align: center;
+    background: #6B6B6B;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0 20px 0;
+  }
+  small{
+    margin: 0;
+    text-align: center;
+  }
+}
+
+/* ---------------------------------------------ここからPCver */
+
+@media screen and (min-width:769px) {
+  main{
+    padding-top: 40px;
+   }
+
+  .sp {
+    display: none;
+  }
+  .pc {
+    display: block;
+  }
+  /* ----------------------------ここからPC用メニュー */
+  header h1 {
+    max-width: 1080px;
+    margin: auto;
+  }
+  header h1 img {
+    padding-top: 10px;
+    width: 200px;
+  }
+  header .pcmenu {
+    background: #4d3a98;
+    width: 100%;
+    height: 58px;
+    border-bottom: 3px solid #000;
+    box-shadow: 0px 7px 10px #00000044;
+  }
+  header .pcmenu ul {
+    width: 100%;
+    max-width: 1080px;
+    padding-top: 11px;
+    margin: auto;
+    list-style: none;
+    display: table;
+    padding-left: 0;
+  }
+  header .pcmenu ul li {
+    display: table-cell;
+    text-align: center;
+    border-right: 1px dashed #fff;
+  }
+  header .pcmenu ul li:last-child{
+    border-right: 0;
+  }
+  header .pcmenu ul li a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: "M PLUS Rounded 1c";
+  }
+  header .pcmenu ul li a:hover{
+    padding-bottom: 5px;
+    border-bottom:1px solid #fff;
+  }
+  header .pcmenu ul li.active{
+    padding-bottom: 10px;
+    border-bottom:2px solid #fff;
+  }
+  /* ----------------------------ここまでPC用メニュー */
+  main {
+    max-width: 1080px;
+    margin: auto;
+  }
+  main h2 {
+    font-family: "M PLUS Rounded 1c";
+    position: relative;
+    font-size: 29px;
+    background: #484848;
+    color: #fff;
+    font-weight: normal;
+    padding-left: 65px;
+    border-radius: 13px;
+    width: 90%;
+    max-width: 1080px;
+    margin: 40px auto 40px auto;
+  }
+  main h2:after {
+    position: absolute;
+    content: "";
+    left: 20px;
+    top: 10px;
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    transform: rotate(45deg);
+  }
+  main p {
+    font-size: 18px;
+    line-height: 1.7em;
+  }
+  .link_button {
+    position: relative;
+    background: #739023;
+    text-align: center;
+    padding: 15px 50px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+  }
+  .link_button:hover {
+    background: #acc076;
+  }
+  .link_button:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 16px;
+    right: 20px;
+    border-style: solid;
+    border-width: 10px 0 10px 17.3px;
+    border-color: transparent transparent transparent #ffffff;
+  }
+  /* フッター */
+  footer{
+    text-align: center;
+    background: #6B6B6B;
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    padding: 20px 0 20px 0;
+    margin-top: 100px;
+  }
+  .footer-menu{
+    position: relative;
+    max-width: 1080px;
+    margin: auto;
+    display: block;
+    list-style-image: url("../images/arrow.png");
+    font-size: 16px;
+    word-break: keep-all;
+  }
+  .footer-menu ul{
+    display: flex;
+    padding: 5px 0 20px 25px;
+    border-bottom: 1px #fff solid;
+  }
+  .footer-menu ul li{
+    width: 140px;
+  }
+  .footer-menu ul li a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer-menu ul li a:hover{
+    text-decoration: underline;
+  }
+  small{
+    display: block;
+    max-width: 1080px;
+    margin: auto;
+    text-align: left;
+    padding-left: 50px;
+  }
+  
+   /* 上に戻るボタン  */
+  div.wrapper{
+    width: 80px;
+    height: 80px;
+    border: 3px #000 solid;
+    background-color: #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 44px;
+    right: 60px;
+    margin: -60px 0 0 0;
+  }
+  div.wrapper a{
+    text-decoration: none;
+    color: #000;
+    transition: all .3s;
+  }
+  div.wrapper a:hover{
+    transition: all .3s;
+    color: #999;
+  }
+  .toTop{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Prata', serif;
+    margin: 0 10px 10px 0;
+  }
+  .toTop p{
+    margin: 0;
+    font-size: 25px;
+  }
+  div.toTop{
+    transform: rotate(-45deg);
+    position: relative;
+  }
+  
+   /* 上に戻るボタン  */
+}
+
+
+ /* 下のトップボタンの位置変更 */
+@media screen and (max-width:1000px){
+  div.wrapper{
+    position: absolute;
+    bottom:90px;
+    right: 40px;
+  }
+}

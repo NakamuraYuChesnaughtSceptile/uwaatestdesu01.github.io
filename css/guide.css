@@ -1,0 +1,147 @@
+/* フロアメニュー------------------------------------------------------------------------------------------------- */
+.selecter{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px #484848 solid;
+  width: 100%;
+  margin-top: 10%;
+}
+.selecter a{
+  text-decoration: none;
+}
+.selecter div{
+  background-color: #484848;
+  color: #fff;
+  padding: 5px 5vw;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid #484848;
+}
+/* -------------------------------------------------------------------------------------------------ここまでフロアメニュー */
+
+/* サブタイトルの設定 */
+main h3{
+  font-family: "M PLUS Rounded 1c";
+  position: relative;
+  font-size: 140%;
+  background: #828282;
+  color: #fff;
+  font-weight: normal;
+  padding-left: 50px;
+  border-radius: 13px;
+  margin: 30px auto 30px auto;
+  width: 85%;
+}
+main h3:after {
+  position: absolute;
+  content: "";
+  left: 20px;
+  /* top: 23%; */
+  top:8px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+/* ここまでサブタイトル */
+
+/* 画像置いてるとこ-------------------------------------------------------- */
+.gallery p{
+  text-align: center;
+  border-bottom: 1px #828282 solid;
+}
+.image{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.image img{
+  width: 40vw;
+  margin: 5vh 0;
+  max-width: 400px;
+}
+/* --------------------------------------------ここまで画像置いてるとこ */
+
+/* 概要----------------------------------------------------------- */
+.description h3{
+  background-color: #484848;
+}
+.description table{
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 80vw;
+  max-width: 400px;
+}
+.description td{
+  border-bottom: 1px #484848 solid;
+  padding: 2vh 0;
+}
+.description table tr:last-child td{
+  border: none;
+}
+.description .link_button{
+  margin: 3vh 0;
+}
+/* ---------------------------------------------------ここまで概要 */
+
+/* モバイル版------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 400px){
+  .gallery .link_button{
+    left: 45vw;
+    font-size: 15px;
+  }
+  .description .link_button{
+    left: 25vw;
+  }
+  .selector div{
+    border-bottom: none;
+  }
+}
+/* -----------------------------------------------------------------------------------------------ここまでモバイル */
+
+/* タブレット版------------------------------------------------------------------------------------------------- */
+@media (min-width: 401px) and (max-width: 768px){
+  .gallery .link_button{
+    left: 55%;
+    width: 40vw;
+  }
+  .description .link_button{
+    left: 30%;
+  }
+  .selector div{
+    border-bottom: none;
+  }
+}
+/*------------------------------------------------------------------------------------------------ ここまでタブレット */
+
+/* pc版--------------------------------------------------------------------- */
+@media screen and (min-width: 769px){
+  .selecter{
+    border-bottom: none;
+    margin-top: 2%;
+  }
+  .selecter div{
+    padding: 10px 60px;
+    border-radius: 10px;
+  }
+  .gallery .link_button{
+    width: 200px;
+    margin-top: 100px;
+    font-size: 15px;
+    left: 70%;
+  }
+  .summary{
+    display: flex;
+    width: 90%;
+  }
+  .summary img{
+    width: 40%;
+  }
+  .description .link_button{
+    left: 40%;
+    margin: 5% 0;
+    padding: 15px 60px;
+  }
+  /* ---------------------------------------------------------------------------------------ここまでpc版 */
+
+}

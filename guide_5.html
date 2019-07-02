@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="コミュニケーションギャラリー　リリオはどなたでもご利用になれる多目的ホールです。">
+  <meta name="keywords" content="レンタル会議室,展示会場,会議室,リリオ,大通">
+  <title>リリオ|会場案内 3階：イベントホール</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/guide.css">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Prata&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- header menu内----------------------------------------- -->
+  <header id="header">
+    <h1><a href="#"><img src="images/lirio-logo.png"></a></h1>
+    <!-- ここからモバイル用メニュー ------------------------- -->
+    <div class="header-menu sp">
+      <div><img src="images/mail-icon.png"></div>
+      <div><img src="images/map-icon.png"></div>
+      <div class="menu-icon"><img src="images/menu-icon.png"></div>
+    </div>
+    <!-- ハンバーガーメニュー --------------------------------------------------------------- -->
+    <div class="hambergur-background close-background sp">
+      <div class="hambergur-menu close-menu">
+        <img src="images/menu-close.png" class="menu-close">
+        <ul>
+          <li>トップページ</li>
+          <li>お知らせ</li>
+          <li>会場案内</li>
+          <li>サービス</li>
+          <li>アクセス</li>
+          <li>お問合せ</li>
+        </ul>
+        <div class="hambergur-sns">
+          <a href="#"><img src="images/facebook.png"></a>
+          <a href="#"><img src="images/twitter.png"></a>
+        </div>
+      </div>
+    </div>
+    <!-- ここまでモバイルメニュー --------------- -->
+    <!-- ここからPC用メニュー ------------------------------ -->
+    <nav class="pcmenu pc">
+      <ul>
+        <li><a href="#">トップページ</a></li>
+        <li><a href="#">お知らせ</a></li>
+        <li class="active"><a href="#">会場案内</a></li>
+        <li><a href="#">サービス</a></li>
+        <li><a href="#">アクセス</a></li>
+        <li><a href="#">お問合せ</a></li>
+      </ul>
+    </nav>
+    <!-- ここまでPC用メニュー ------------------------------ -->
+  </header>
+
+  <main>
+    <h2>会場案内</h2>
+    <div class="selecter">
+      <a href="guide_1.html"><div>1階</div></a>
+      <a href="guide_2.html"><div>2階</div></a>
+      <a href="guide_3.html"><div>3階</div></a>
+      <a href="guide_4.html"><div>4階</div></a>
+      <div style="background-color: #bebebe; color: #000">5階</div>
+    </div>
+
+    <div class="gallery">
+      <h3 class="gallery_title">5階：特別会議室</h3>
+      <p>大切なお客様を招いてのミーティングや社内会議、定例会に</p>
+      <div class="image">
+        <img src="images/5F/meeting1_pc.JPG" alt="" class="pc">
+        <img src="images/5F/meeting1_sp.JPG" alt="" class="sp">
+        <img src="images/5F/meeting2.JPG" alt="">
+        <img src="images/5F/meeting3.jpg" alt="">
+        <img src="images/5F/meeting4.jpg" alt="">
+      </div>
+      <a href="pdf/5F.pdf" target="_blank">
+        <button class="link_button">
+          図面PDF
+        </button>
+      </a>
+    </div>
+
+    <div class="description">
+      <h3>概要</h3>
+      <div class="summary">
+        <table>
+          <tr><td>収容人数：</td><td>18名</td></tr>
+          <tr><td>面積：</td><td>47.47㎡(14坪)</td></tr>
+          <tr><td>視聴覚機材：</td><td>DVD<br>プロジェクター<br>スクリーン</td></tr>
+          <tr><td>付帯設備：</td><td>ホワイトボード</td></tr>
+        </table>
+        <img src="images/5F/meeting.png" class="pc">
+      </div>
+      <button class="link_button">サービス一覧</button>
+    </div>
+
+  </main>
+  <footer>
+
+      <div class="pc footer-menu">
+        <ul>
+          <li><a href="#">トップページ</a></li>
+          <li><a href="#">お知らせ</a></li>
+          <li><a href="#">会場案内</a></li>
+          <li><a href="#">サービス</a></li>
+          <li><a href="#">アクセス</a></li>
+          <li><a href="#">お問合せ</a></li>
+        </ul>
+        <!-- 上に戻るボタン -->
+        <div class="wrapper pc">
+          <a href="#header">
+            <div class="toTop">
+              <p><b>↑</b></p>
+              <p><b>TOP</b></p>
+            </div>
+          </a>
+        </div>
+        <!-- /上に戻るボタン -->
+  
+      </div>
+      <small>
+        (C) 2019 コミュニケーションギャラリー リリオ<br>
+        TEL:019-623-2520 FAX:019-623-7135 <br class="sp">Mail:lirio@odori.or.jp
+      </small>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+    <script>
+  
+      // スライドスクロール
+      $('a[href^="#"]').click(function () {
+        var speed = 400;
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $('body,html').animate({
+          scrollTop: position
+        }, speed, 'swing');
+        return false;
+      });
+  
+      // ハンバーガメニュー
+      $('.menu-icon').click(function () {
+        $('.hambergur-background').removeClass('close-background');
+        $('.hambergur-menu').removeClass('close-menu');
+      })
+      $('.menu-close').click(function () {
+        $('.hambergur-menu').addClass('close-menu');
+        $('.hambergur-background').addClass('close-background');
+      })
+  
+    </script>
+  
+  </body>
+  
+  </html>

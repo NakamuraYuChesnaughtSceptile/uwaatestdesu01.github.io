@@ -99,6 +99,7 @@
   .slider .slider-gradient .slidertext p {
     margin: 0;
     font-size: 15px;
+    line-height: 1em;
   }
   .slick-dots {
     position: absolute;
@@ -138,6 +139,7 @@
     text-decoration: none;
     color: black;
     display: block;
+    margin-bottom: 10px;
   }
   ul.info li a:hover {
     cursor: pointer;
@@ -152,7 +154,7 @@
   ul.info li date:after{
     position: absolute;
     left: 0;
-    top: 6px;
+    top: 3px;
     content: "";
     width: 10px;
     height: 10px;

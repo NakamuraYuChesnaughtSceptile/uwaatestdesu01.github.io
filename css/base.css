@@ -9,6 +9,14 @@ h2:first-child {
   padding: auto;
 }
 
+.hambergur-menu ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+.hambergur-menu ul li a:hover{
+  text-decoration: underline;
+}
+
 main {
   padding-top: 90px;
 }

@@ -73,13 +73,6 @@
   .headerimg.sp {
     display: block!important;
   }
-  .hambergur-menu ul li a{
-    color: #fff;
-    text-decoration: none;
-  }
-  .hambergur-menu ul li a:hover{
-    text-decoration: underline;
-  }
   .headerimg{
     padding-top: 60px;
   }

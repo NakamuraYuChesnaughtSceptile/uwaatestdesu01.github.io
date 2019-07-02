@@ -69,6 +69,7 @@ main{
     border-right: 1px #fff dashed;
     border-left: 1px #fff dashed;
     text-align: center;
+    background: #4d3a98;
   }
   header .header-menu div:hover {
     cursor: pointer;

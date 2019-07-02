@@ -80,6 +80,7 @@ main {
     width: 50px;
     min-width: 50px;
     max-width: 100px;
+    line-height: 60px;
   }
   /* hambergur------------------------------------------ */
   header .hambergur-menu {

@@ -94,7 +94,7 @@
   .slider .slider-gradient .slidertext h3 {
     font-weight: normal;
     font-size: 19px;
-    margin: 0;
+    margin: 10px 0;
   }
   .slider .slider-gradient .slidertext p {
     margin: 0;
@@ -147,6 +147,7 @@
     display: block;
     font-weight: bold;
     padding-left: 20px;
+    margin-bottom:10px;
   }
   ul.info li date:after{
     position: absolute;

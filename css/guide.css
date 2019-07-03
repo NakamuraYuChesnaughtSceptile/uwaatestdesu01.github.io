@@ -54,6 +54,7 @@ main h3:after {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 .image img{
   width: 40%;
@@ -84,36 +85,35 @@ main h3:after {
   margin: 3vh 0;
 }
 /* ---------------------------------------------------ここまで概要 */
+.pdf_area{
+  position: relative;
+  right: 40px;
+  text-align: right;
+  margin-bottom: 50px;
+}
+.button_area{
+  text-align: center;
+  margin-bottom: 70px;
+}
 
 /* モバイル版------------------------------------------------------------------------------------------------------- */
-@media screen and (max-width: 400px){
+
+
+@media screen and (max-width: 768px){
   .gallery .link_button{
-    left: 45vw;
-    font-size: 15px;
+    left: 40%;
   }
-  .description .link_button{
-    left: 25vw;
+  .description {
+    margin-bottom: 50px;
   }
   .selector div{
     border-bottom: none;
+  }
+  .summary{
+    margin-bottom: 50px;
   }
 }
 /* -----------------------------------------------------------------------------------------------ここまでモバイル */
-
-/* タブレット版------------------------------------------------------------------------------------------------- */
-@media (min-width: 401px) and (max-width: 768px){
-  .gallery .link_button{
-    left: 55%;
-    width: 40vw;
-  }
-  .description .link_button{
-    left: 30%;
-  }
-  .selector div{
-    border-bottom: none;
-  }
-}
-/*------------------------------------------------------------------------------------------------ ここまでタブレット */
 
 /* pc版--------------------------------------------------------------------- */
 @media screen and (min-width: 769px){
@@ -126,14 +126,14 @@ main h3:after {
     border-radius: 10px;
   }
   .gallery .link_button{
-    width: 200px;
+    width: 100%;
     margin-top: 100px;
     font-size: 15px;
-    left: 70%;
   }
   .summary{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 70px;
   }
   .summary table{
     margin: 0;

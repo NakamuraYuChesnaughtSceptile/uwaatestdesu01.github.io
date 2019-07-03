@@ -167,6 +167,9 @@
 
   .recruitment .recruitment-content img{
     width: 100%;
+    height:35vw;
+    object-fit: cover;
+    object-position: top center;
   }
   
   .recruitment .recruitment-content h4{
@@ -264,6 +267,12 @@
   }
   .recruitment .recruitment-content{
     width: 378px;
+  }
+  .recruitment .recruitment-content img{
+    width: 100%;
+    height:200px;
+    object-fit: cover;
+    object-position: top center;
   }
   .recruitment .recruitment-content h4{
     margin: 5px 0px 0px 0px;

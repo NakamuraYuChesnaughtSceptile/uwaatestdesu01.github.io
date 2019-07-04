@@ -21,6 +21,18 @@ main {
   padding-top: 90px;
 }
 
+footer .banner{
+  text-align: right;
+  max-width: 1080px;
+  /* margin-right: 0; */
+  margin: auto;
+}
+
+footer .banner img{
+  margin-right: 90px;
+  margin-top: -50px;
+}
+
 /* 320px以下は固定 */
 
 @media screen and (max-width:320px) {
@@ -223,6 +235,15 @@ main {
   small {
     margin: 0;
     text-align: center;
+  }
+  footer .banner{
+    text-align: center;
+    width: 100%;
+    margin: 15px auto auto auto;
+  }
+  
+  footer .banner img{
+    margin: auto;
   }
 }
 

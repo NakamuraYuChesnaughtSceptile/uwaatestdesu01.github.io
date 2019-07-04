@@ -59,6 +59,16 @@
   font-size: 32px;
 }
 
+.recruitment .recruitment-content{
+  transition: all .3s;
+  opacity: 1;
+}
+
+.recruitment .recruitment-content:hover{
+  transition: all .3s;
+  opacity: .7;
+}
+
 .recruitment a{
   text-decoration: none;
   color: #000;

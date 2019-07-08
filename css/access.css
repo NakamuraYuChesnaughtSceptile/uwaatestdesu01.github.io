@@ -13,6 +13,11 @@
     width: 90%;
     height: 300px;
   }
+  .map ul li {
+    text-align: left;
+    list-style: square;
+    margin-bottom: 10px;
+  }
   .map .map-button {
     margin-top: 40px;
     margin-right: 25px;
@@ -50,11 +55,11 @@
     list-style: square;
   }
   .map .link_button {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px;
     padding-left: 40px;
     padding-right: 55px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 10px; */
   }
   .map .link_button:after {
     position: absolute;

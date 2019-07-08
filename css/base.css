@@ -21,16 +21,11 @@ main {
   padding-top: 90px;
 }
 
-footer .banner{
-  text-align: right;
-  max-width: 1080px;
-  /* margin-right: 0; */
+.footer_flex{
+  max-width: 980px;
+  display: flex;
+  justify-content: space-between;
   margin: auto;
-}
-
-footer .banner img{
-  margin-right: 90px;
-  margin-top: -50px;
 }
 
 /* 320px以下は固定 */
@@ -232,8 +227,12 @@ footer .banner img{
     color: #fff;
     padding: 20px 0 20px 0;
   }
+  .footer_flex{
+    max-width: 980px;
+    display: block;
+    margin: auto;
+  }
   small {
-    margin: 0;
     text-align: center;
   }
   footer .banner{
@@ -241,7 +240,6 @@ footer .banner img{
     width: 100%;
     margin: 15px auto auto auto;
   }
-  
   footer .banner img{
     margin: auto;
   }
@@ -400,12 +398,9 @@ footer .banner img{
     text-decoration: underline;
   }
   small {
-    display: block;
-    max-width: 1080px;
-    margin: auto;
     text-align: left;
-    padding-left: 50px;
   }
+  
   /* 上に戻るボタン  */
   div.wrapper {
     width: 80px;

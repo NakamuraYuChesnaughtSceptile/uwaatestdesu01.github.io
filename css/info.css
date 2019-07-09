@@ -1,8 +1,12 @@
 /*ここからモバイル*/
-
 .info_img{
   text-align: center;
-  width: 100%;
+}
+
+.info_img img{
+  width: 300px;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .info_summary{
@@ -23,6 +27,12 @@
 
 /*ここからPC*/
 @media screen and (min-width:768px) {
+  .info_img img{
+    width: 400px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
   .info_description p{
     line-height: 2.2em;
   }

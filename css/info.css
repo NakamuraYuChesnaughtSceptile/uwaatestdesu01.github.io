@@ -9,10 +9,6 @@
   object-fit: contain;
 }
 
-.info_summary{
-  padding-left:10 ;
-}
-
 .info_summary ul{
   padding-inline-start: 20px;
   padding-inline-end: 20px;

@@ -39,6 +39,7 @@
   .info_summary ul li{
     font-size: 20px;
     padding-top:2em;
+    margin-bottom: 10px;
     list-style: none;
     border-bottom: solid 0.5px #2e2e2e;
   }

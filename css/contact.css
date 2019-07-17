@@ -18,20 +18,27 @@ p.contact_red{
 
 .contact_center{
   text-align: center;
-
 }
 
-.contact_center p{
-  padding: 5% auto;
+.contact_button{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 80%;
 }
 
+.contact_button a{
+  width: 200px;
+  margin-bottom: 40px;
+}
 
 .contact_numbers{
   margin-top: 5%;
 }
 
 .contact_numbers ul{
-padding:20px;
+  padding:20px;
 }
 
 .contact_numbers ul li{
@@ -53,13 +60,14 @@ padding:20px;
 @media screen and (min-width:768px) {
   .content_flex{
     display: flex;
-    flex: 50%;
+    justify-content: space-between;
+    margin-top: 70px;
   }
   .content_img{
-    width:100%;
+    width:350px;
   }
   .content_mb{
-    margin: auto;
+    margin: 0 auto 0 auto;
   }
   .content_pc{
   margin: auto;

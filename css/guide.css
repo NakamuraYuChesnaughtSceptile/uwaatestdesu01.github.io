@@ -112,6 +112,15 @@ main h3:after {
   .summary{
     margin-bottom: 50px;
   }
+  .button_area{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .button_area a{
+    margin-bottom: 30px;
+  }
 }
 /* -----------------------------------------------------------------------------------------------ここまでモバイル */
 
@@ -152,6 +161,15 @@ main h3:after {
     margin: 40px 0;
     height: 280px;
     object-fit: cover;
+  }
+  .button_area{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .button_area a{
+    margin-bottom: 30px;
   }
   /* ---------------------------------------------------------------------------------------ここまでpc版 */
 
